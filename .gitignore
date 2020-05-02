@@ -70,3 +70,4 @@ cocostudio/Resources
 # Others should Ignored
 *-build
 CMakeFiles
+.vscode
