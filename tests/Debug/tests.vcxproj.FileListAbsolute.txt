@@ -1,0 +1,2 @@
+D:\Codes\2020\FakeAkEngine\tests\Debug\tests.dll
+D:\Codes\2020\FakeAkEngine\tests\Debug\tests.pdb

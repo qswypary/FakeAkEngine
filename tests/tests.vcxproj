@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{3EF6767A-3C90-46B2-9CA2-40F4ACFCAEE6}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>tests</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectSubType>NativeUnitTestProject</ProjectSubType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>.\Debug</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>D:\Codes\2020\FakeAkEngine\Classes;D:\Codes\2020\FakeAkEngine\cocos2d\cocos\audio\include;D:\Codes\2020\FakeAkEngine\cocos2d;D:\Codes\2020\FakeAkEngine\cocos2d\cocos;D:\Codes\2020\FakeAkEngine\cocos2d\extensions;D:\Codes\2020\FakeAkEngine\cocos2d\cocos\platform;D:\Codes\2020\FakeAkEngine\cocos2d\cocos\editor-support;D:\Codes\2020\FakeAkEngine\cocos2d\cocos\base;D:\Codes\2020\FakeAkEngine\cocos2d\cocos\platform\win32;D:\Codes\2020\FakeAkEngine\cocos2d\external\recast\..;D:\Codes\2020\FakeAkEngine\cocos2d\external\tinyxml2\.;D:\Codes\2020\FakeAkEngine\cocos2d\external\xxhash\.;D:\Codes\2020\FakeAkEngine\cocos2d\external\xxtea\.;D:\Codes\2020\FakeAkEngine\cocos2d\external\clipper\.;D:\Codes\2020\FakeAkEngine\cocos2d\external\edtaa3func\.;D:\Codes\2020\FakeAkEngine\cocos2d\external\ConvertUTF\.;D:\Codes\2020\FakeAkEngine\cocos2d\external\poly2tri\..;D:\Codes\2020\FakeAkEngine\cocos2d\external\md5\..;D:\Codes\2020\FakeAkEngine\cocos2d\external\unzip\.;D:\Codes\2020\FakeAkEngine\cocos2d\external\Box2D\include;D:\Codes\2020\FakeAkEngine\cocos2d\external\chipmunk\include;D:\Codes\2020\FakeAkEngine\cocos2d\external\freetype2\include\win32\freetype2;D:\Codes\2020\FakeAkEngine\cocos2d\external\bullet\include;D:\Codes\2020\FakeAkEngine\cocos2d\external\bullet\include\bullet;D:\Codes\2020\FakeAkEngine\cocos2d\external\jpeg\include\win32;D:\Codes\2020\FakeAkEngine\cocos2d\external\openssl\include\win32;D:\Codes\2020\FakeAkEngine\cocos2d\external\uv\include;D:\Codes\2020\FakeAkEngine\cocos2d\external\webp\include\win32;D:\Codes\2020\FakeAkEngine\cocos2d\external\websockets\include\win32;D:\Codes\2020\FakeAkEngine\cocos2d\external\curl\include\win32;D:\Codes\2020\FakeAkEngine\cocos2d\external\png\include\win32;D:\Codes\2020\FakeAkEngine\cocos2d\external\win32-specific\gles\include\OGLES;D:\Codes\2020\FakeAkEngine\cocos2d\external\win32-specific\icon\include;D:\Codes\2020\FakeAkEngine\cocos2d\external\win32-specific\MP3Decoder\include;D:\Codes\2020\FakeAkEngine\cocos2d\external\win32-specific\OggDecoder\include;D:\Codes\2020\FakeAkEngine\cocos2d\external\win32-specific\OpenalSoft\include;D:\Codes\2020\FakeAkEngine\cocos2d\external\glfw3\include\win32;D:\Codes\2020\FakeAkEngine\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories);$(VCInstallDir)UnitTest\include;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UseFullPaths>true</UseFullPaths>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>$(VCInstallDir)UnitTest\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>..\win32-build\FakeAkEngine.dir\Debug\Game*.obj;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(VCInstallDir)UnitTest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UseFullPaths>true</UseFullPaths>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>$(VCInstallDir)UnitTest\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(VCInstallDir)UnitTest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UseFullPaths>true</UseFullPaths>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(VCInstallDir)UnitTest\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(VCInstallDir)UnitTest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UseFullPaths>true</UseFullPaths>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(VCInstallDir)UnitTest\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="testGameAttribute.cpp" />
+    <ClCompile Include="testGameAttributeModifier.cpp" />
+    <ClCompile Include="testGameHp.cpp" />
+    <ClCompile Include="testGameMutableAttribute.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\win32-build\ALL_BUILD.vcxproj">
+      <Project>{c2b26685-5005-3897-a327-5d02c12a8ee3}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\win32-build\engine\cocos\core\cocos2d.vcxproj">
+      <Project>{9350a3f4-631d-3243-b26e-ee94105d5d96}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\win32-build\engine\external\clipper\ext_clipper.vcxproj">
+      <Project>{dbe690ce-70ab-3e6d-902d-cfca234ccb9a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\win32-build\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
+      <Project>{a2b944f5-06d8-332f-9a34-4b8fc308a683}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\win32-build\engine\external\edtaa3func\ext_edtaa3func.vcxproj">
+      <Project>{f2bf5575-6c37-380d-b55d-0bfcefbadf48}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\win32-build\engine\external\external.vcxproj">
+      <Project>{e49a900d-15d8-3e81-afc5-a90418ea5dd7}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\win32-build\engine\external\md5\ext_md5.vcxproj">
+      <Project>{b70fc6d2-690a-36e5-9e3c-3a013a6a1dcb}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\win32-build\engine\external\poly2tri\ext_poly2tri.vcxproj">
+      <Project>{f8ae6bcd-8a7e-3ec5-9fdf-90d550669fcc}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\win32-build\engine\external\recast\ext_recast.vcxproj">
+      <Project>{a44af3fa-0f68-3053-b104-5a8c17d61567}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\win32-build\engine\external\tinyxml2\ext_tinyxml2.vcxproj">
+      <Project>{7755b1a3-ce4d-32da-8ee6-71f7b321af84}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\win32-build\engine\external\unzip\ext_unzip.vcxproj">
+      <Project>{57591a1a-55ba-3ca0-a22b-d2f3440419ee}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\win32-build\engine\external\xxhash\ext_xxhash.vcxproj">
+      <Project>{e96eca80-5312-34cc-8753-c97fda7cad89}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\win32-build\engine\external\xxtea\ext_xxtea.vcxproj">
+      <Project>{786920c7-11c1-31fe-ad15-619bed5f31b5}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\win32-build\FakeAkEngine.vcxproj">
+      <Project>{93f5af38-e315-3c56-b6d1-040c1c8b0dc9}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\win32-build\SYNC_RESOURCE-FakeAkEngine.vcxproj">
+      <Project>{485b4f79-2793-33dc-a7d3-13c554665076}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\win32-build\ZERO_CHECK.vcxproj">
+      <Project>{cc07fefa-962e-318e-a27f-c8bcec5d0ac7}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
